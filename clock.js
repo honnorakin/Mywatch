@@ -6,4 +6,7 @@ function showtime() {
     clock.innerHTML = '${('0' + date.getHours()).slice(-2)}:${('0' + date.getMinutes()).slice(-2)}:${('0' + date.getSeconds()).slice(-2)} ${days[date.getUTCDay()]}`
     setTimeout(showTime, 1);
 }
-showtime();
+    showtime();
+    let nameFirst = document.querySelector("#myName")
+    let username = prompt("Type your name")
+    nameFirst.innerHTML = '${userName}'
